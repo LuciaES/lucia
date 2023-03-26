@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title></title>
+    </head>
+
+<div id= "container">
+    <body>
+      <header>
+        <img src="luciaespiga.png"style="width:180px;height: 180px;border-radius: 50%;">
+        <!-- <h1 style="color:#ffffff; font: 900 60px Montserrat;">L u c i a</h1> -->
+      </header>
+
+
+        <div class= "links">
+          <a href= "index.html"style= "box-shadow: inset 0 3px 20px grey;"> Home</a>
+          <a href= "services.html"style= "box-shadow: inset 0 3px 20px grey;"> Services</a>
+          <a href= "about.html"style= "box-shadow: inset 0 3px 20px grey;"> About Me</a>
+          <a href="testimonials.html"style= "box-shadow: inset 0 3px 20px grey;">Testimonials</a>
+          <a href= "stp.html"style= "box-shadow: inset 0 3px 20px grey;">Podcast</a>
+        </div>
+
+        <div id="body">
+          <div class="infome">
+            <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);" style="background-color: white; font-weight: bolder;font-family: fantasy;">
+
+
+<script type="text/javascript">
+  function ValidateForm(frm) {
+    if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+      if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+        if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+          if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+  return true; }
+
+</script>
+  <table class= "box" style="width:250px;box-shadow: inset 0 3px 20px grey;" cellpadding="8" cellspacing="0">
+  <tr> <td>
+    <label for="Name">Name*:</label>
+  </td> <td>
+    <input name="Name" type="text" maxlength="60" style="width:250px; border-color: grey; border-style: solid;" />
+  </td> </tr> <tr> <td>
+    <label for="FromEmailAddress">Email address*:</label>
+  </td> <td>
+    <input name="FromEmailAddress" type="text" maxlength="90" style="width:250px;border-color: grey; border-style: solid;" />
+  </td> </tr> <tr> <td>
+    <label for="Comments">Comments*:</label>
+  </td> <td>
+    <textarea name="Comments" rows="7" cols="40" style="width:400px;"></textarea>
+  </td> </tr> <tr> <td>
+    *required fields
+  </td> <td>
+    <div style="float:right;"><a href="https://www.100forms.com" id="lnk100" title="form to email">form</a>
+      <input name="skip_Submit" type="submit" value="Submit"/>
+
+<script src="https://www.100forms.com/js/FORMKEY:L9HTFLT83NZK" type="text/javascript"></script>
+</td> </tr>
+</table>
+</form>
+        </div>
+
+      </div>
+    </body>
+  </div>
+
+    <footer>
+    <div id= "footer">
+       <a href="http://www.thesoultribepodcast.com"><img src="stp.jpg" width="150" height="150" alt="The Soul Tribe Podcast logo" /></a>
+    </div>
+  </footer>
+
+
+<style>
+
+  header {
+    padding: auto;
+    font-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0%;
+    background: url('astro.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: bolder;
+    height: 180px;
+    width: 100%;
+  }
+  body {
+   margin:0;
+   padding:0;
+   height:100%;
+   background-color: #000000;
+   position: relative;
+
+}
+
+  #body{
+    margin: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 170px; /* height of your footer */
+  }
+
+  .infome{
+   position: relative;
+   display:flex;
+   justify-content: space-around;
+   padding:40px;
+   margin-bottom: 30px;
+   text-align:center;
+   padding: 50px;
+  }
+
+  .box {
+    padding: 25px;
+  }
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: fantasy;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+input[type="submit"] {
+  font-size:20px;
+  width:150px;
+  height:50px;
+  background:white;
+  box-shadow: inset 0 15px 20px grey;
+  border-radius: 20%;
+
+}
+
+
+  a {
+    color: #000000;
+    background: #ffffff;
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+  }
+
+  a:hover {
+    opacity: .2;
+  }
+
+  a:visited {
+    color: #000000;
+  }
+
+  #footer {
+  bottom: 0;
+  width: 100%;
+  height: 170px;
+  background-color: #ffffff;
+  border-radius: 0%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  }
+</style>
+</html>
+
